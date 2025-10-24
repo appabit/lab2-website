@@ -1,0 +1,106 @@
+/* ==============================
+   General Page Styles
+============================== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f3f3f8;
+}
+
+header {
+  background: #4b2e83; /* UW Purple */
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+main {
+  padding: 20px;
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  background: #4b2e83;
+  color: #f0f0f0;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* ==============================
+   Navigation Bar Styles
+============================== */
+nav ul {
+  list-style: none;
+  background: #2f2f3a; /* dark gray-blue base */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #e9e9e9;
+  text-decoration: none;
+  padding: 14px 22px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+/* Hover and Active Colors */
+nav ul li a:hover {
+  background: #5e5a9e; /* lighter purple accent */
+  color: #ffffff;
+  border-bottom: 3px solid #b6a1ff; /* subtle glow effect */
+}
+
+nav ul li a.active {
+  background: #3a347e; /* deep purple-blue for active tab */
+  color: #ffffff;
+  border-bottom: 3px solid #ffc857; /* gold accent to stand out */
+}
+
+/* ==============================
+   Image Styling
+============================== */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px auto;
+}
+
+/* ==============================
+   Responsive Layout
+============================== */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    text-align: left;
+  }
+
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
